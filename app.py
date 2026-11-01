@@ -3158,7 +3158,7 @@ _EMBEDDED_MODULES = {'research_tool': '"""Free DuckDuckGo search adapter used by
          'from backend.lead_qualification import LeadQualificationRequest, qualify_lead\n'
          'from backend.data_report import analyze_csv as analyze_csv_with_crew\n'
          '\n'
-         'app = FastAPI(title="CrewSphere AI API")\n'
+         'app = FastAPI(title="CrewAI API")\n'
          'app.add_middleware(\n'
          '    CORSMiddleware,\n'
          '    allow_origins=[\n'
