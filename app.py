@@ -3195,8 +3195,8 @@ _EMBEDDED_MODULES = {'research_tool': '"""Free DuckDuckGo search adapter used by
          '"/agent10", "status": "available"},\n'
          ']\n'
          '\n'
-         '@app.get("/api/agents")\n'
-         '@app.get("/api/v1/modules")\n'
+         @app.get("/api/agents", include_in_schema=False)
+         @app.get("/api/v1/modules", include_in_schema=False)
          'def list_agents():\n'
          '    return {"agents": AGENT_CATALOG, "count": len(AGENT_CATALOG)}\n'
          '\n'
